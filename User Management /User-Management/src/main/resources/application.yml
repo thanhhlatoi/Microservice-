@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: User-Management
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/test3
+    username: root
+    password: 110403
+  server:
+    port: 9999
+
+  # Cấu hình JPA/Hibernate
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+
+  #Jwt
+  jwt:
+    signerKey: XIUMOY1zMZppH8gTKyXtLu7PJjG5zbI5N8vq28HbQFwO4+Av619325j6k9F3rMOG4pKwH0DIYYmSDorCex882/I3fz+vT4QDoF7YphgGm1J6O34bJJUqi0ZUBJtOzWw8
+
